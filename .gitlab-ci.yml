@@ -5,8 +5,10 @@ pages:
     - yarn
   script:
     - yarn build
+    - rm -rf public
+    - mv dist public
   artifacts:
     paths:
-      - dist
+      - public
   only:
     - pages
