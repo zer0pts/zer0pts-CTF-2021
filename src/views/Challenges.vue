@@ -10,11 +10,13 @@
       </form>
 
       <div class="flex">
+        <template v-if="false">
         <div class="inline-form">
           <label>
             <input type="checkbox" v-model="showsolved" />show solved challenges
           </label>
         </div>
+        </template>
         <div class="inline-form">
           <input type="text" placeholder="filter" v-model="filter" />
         </div>
