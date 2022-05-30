@@ -14,6 +14,9 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.2.0
+        
+      - name: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: yarn build
         run: yarn build
